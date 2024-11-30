@@ -2,6 +2,8 @@
 FROM python:3.8-slim
 # Définit le répertoire de travail
 WORKDIR /app
-# Copie le fichier app.py dans le conteneurCOPY app.py .
+# Copie le fichier app.py dans le conteneur
+COPY app.py .
+# Définit une variable d'environnementENV MESSAGE="Bonjour, monde DevOps!"
 # Commande pour exécuter le script Python
 CMD ["python", "app.py"]
