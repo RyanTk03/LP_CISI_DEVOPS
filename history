@@ -1,0 +1,35 @@
+mkdir git-example
+cd git-example
+git init
+git config --global user.name rayane
+git config --global user.email rayanetoko@gmail.com
+git branch -m main
+git branch
+vim README.md
+vim main.py
+python main.py 
+vim Dockerfile 
+mv main.py app.py
+ls
+git add .
+git commit -m "LP CISI DEVOPS FIRSTCOMMIT"
+gh repo create
+git add .
+touch .gitignore
+ls
+git remote add origin https://github.com/RyanTk03/LP_CISI_DEVOPS
+git branch -m main
+git push --set-upstream origin main
+clear
+docker build -t my_app
+docker build -t my_app .
+docker run --rm
+docker run --rm my_app
+ls
+vim app.py
+vim Dockerfile 
+git add .
+git commit -m "feat(env variable): update app to show environnement variable"
+git push
+docker build -t my_app .
+docker run --rm my_app
